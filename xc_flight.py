@@ -68,6 +68,7 @@ class Flight_clawer(Clawer):
         self.proxys = {'proxies': ''}
         self.cookies = self._cookies
         self.req_id = '%s_%s' % (Dcity, Acity)
+        self.repeat_times = 0
 
     def scheduler(self):
         if isinstance(self.respond, dict):
@@ -211,8 +212,8 @@ def param_info(info_dict):
 if __name__ == '__main__':
     info_dict = {'名称': '航班信息抓取工具V1.0',
                  '邮箱': '575548935@qq.com',
-                 '起始时间': '20180528',
-                 '终止时间': '20180531'
+                 '起始时间': '20180530',
+                 '终止时间': '20180530'
                  }
     param_info(info_dict)
     start = info_dict['起始时间']
